@@ -5,10 +5,29 @@ A 2D top view rogue-like game made by Haratake Kentaro. The game includes tower 
 
 Onslaught!(猛攻撃という意味)は原武健太郎によって制作された、2Dトップビューのアクションローグライクゲームです。建築物（防衛塔など）の設置といったタワーディフェンス要素もあります。ゲームの目的はプレイヤーの生存と、街を敵から守り抜くことです。
 
-## Setup
+Language used / 使用言語: C++
+Library used / 使用ライブラリー: Simple Fast Media Library
+
+
+## How to start / 起動方法
 The game can be played by opening the Onslaught.exe file, located inside the Onslaught_build folder. The .exe file must be in the same location as the resources folder.
 
-In the case that windows security does not allow you to start Onslaught.exe, you must start the program directly from terminal. 
+** If windows security does not allow you to start Onslaught.exe, you must open the file directly from Terminal/PowerShell. 
+An easy way to do so is to :
+1. Open the Onslaught_build folder.
+2. Shift+Right click some open space in the folder
+3. Click on "Open PowerShell Window here"
+4. Type " ./Onslaught.exe " in the PowerShell window and press enter
+
+ゲームは　Onslaught_build　内にある実行ファイル　Onslaught.exe　を開くと起動する。このファイルは　resourcesと同じ場所でないと起動しません。
+
+＊＊WindowsセキュリティーでOnslaught.exeが開かない場合、ファイルを Terminal/PowerShell で直接開かないといけません。
+手順　：
+1. Onslaught_build フォルダーを開く
+2. フォルダーないの空白（どこでも）を　Shift + 右クリック
+3. PowerShellウィンドウをここで開く　をクリック
+4. PowerShellが開くと、そこに " ./Onslaught.exe " を入力し、Enterキーを押す
+
 
 
 ## Controls
