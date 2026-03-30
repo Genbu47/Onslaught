@@ -19,6 +19,7 @@ An easy way to do so is to :
 3. Click on "Open PowerShell Window here"
 4. Type " ./Onslaught.exe " in the PowerShell window and press enter
 
+
 ゲームは　Onslaught_build　内にある実行ファイル　Onslaught.exe　を開くと起動する。このファイルは　resourcesと同じ場所でないと起動しません。
 
 ＊＊WindowsセキュリティーでOnslaught.exeが開かない場合、ファイルを Terminal/PowerShell で直接開かないといけません。
