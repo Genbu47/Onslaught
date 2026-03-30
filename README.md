@@ -3,7 +3,7 @@
 ## Description / 概要
 A 2D top view rogue-like game made by Haratake Kentaro. The game includes tower defence aspects by allowing players to place towers. The objective is that the player stays alive while protecting the town from enemies. 
 
-Onslaught!(猛攻撃という意味)原武健太郎によって制作された、2Dトップビューのアクションローグライクゲームです。建築物（防衛塔など）の設置といったタワーディフェンス要素もあります。ゲームの目的はプレイヤーの生存と、街を敵から守り抜くことです。
+Onslaught!(猛攻撃という意味)は原武健太郎によって制作された、2Dトップビューのアクションローグライクゲームです。建築物（防衛塔など）の設置といったタワーディフェンス要素もあります。ゲームの目的はプレイヤーの生存と、街を敵から守り抜くことです。
 
 ## Setup
 The game can be played by opening the Onslaught.exe file, located inside the Onslaught_build folder. The .exe file must be in the same location as the resources folder.
