@@ -83,7 +83,7 @@ std::shared_ptr<Player> Player::create() {
 }
 // create hitbox for player
 void Player::initializeHitbox() {
-    entityHitbox = std::make_shared<Hitbox>( selfPtr, shape.getPosition(), shape.getRadius(), 0);
+    entityHitbox = std::make_shared<Hitbox>( selfPtr, shape.getPosition(), shape.getRadius()-7.f, 0);
     CollisionManager::getInstance().addEntityHitbox(entityHitbox);
 }
 

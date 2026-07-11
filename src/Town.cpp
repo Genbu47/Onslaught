@@ -29,7 +29,7 @@ Town::Town()
 
 	float scale = (size.x*1.1f / spriteSize.x);
 	sprite.setScale({scale, scale});
-
+	spriteOffset = spriteSize.y * 0.05f;
     sprite.setPosition({0.f, 0.f - spriteOffset});
 
 	// interaction radius should be AT MINIMUM player rad + townSize/2
@@ -55,7 +55,10 @@ void Town::initializePtr(std::shared_ptr<Town> town) {
 }
 
 void Town::initializeHitbox() {
-	entityHitbox = std::make_shared<Hitbox>(selfPtr, rect.getPosition(), rect.getSize(), 0);
+	sf::Vector2f hitboxSize = sprite.getGlobalBounds().size;
+	hitboxSize.x -= 0.9f;
+	hitboxSize.y *= 0.8f;
+	entityHitbox = std::make_shared<Hitbox>(selfPtr, rect.getPosition(), hitboxSize, 0);
 	CollisionManager::getInstance().addEntityHitbox(entityHitbox);
 }
 

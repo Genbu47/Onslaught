@@ -17,8 +17,8 @@ buildingID(id), expired(false)
 	float scaleX = (buildingSize.x / spriteSize.x);
 	float scaleY = (buildingSize.y / spriteSize.y);
 	sprite.setScale({scaleX * 1.15f, scaleY * 1.15f});
-	spriteOffset = 7.f;
-    sprite.setPosition({pos.x, pos.y + spriteOffset});
+	spriteOffset = 5.f;
+    sprite.setPosition({pos.x, pos.y - spriteOffset});
 
 	changeInvincibility(0.5f);
 }
@@ -35,7 +35,10 @@ void Building::initializePtr(std::shared_ptr<Building> ptr) {
 }
 
 void Building::initializeHitbox() {
-    entityHitbox = std::make_shared<Hitbox>(selfPtr, position, sprite.getGlobalBounds().size, faction);
+	sf::Vector2f hitboxSize = sprite.getGlobalBounds().size;
+	hitboxSize.x *= 0.9f;
+	hitboxSize.y *= 0.7f;
+    entityHitbox = std::make_shared<Hitbox>(selfPtr, position, hitboxSize, faction);
     CollisionManager::getInstance().addEntityHitbox(entityHitbox);
 }
 

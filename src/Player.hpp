@@ -20,7 +20,7 @@ private:
 
     float scale = 3.f;
     bool facingLeft = false;
-    float spriteOffset = -25.f;
+    float spriteOffset = -30.f;
     bool keyboardInput = true;
 
     // player stats

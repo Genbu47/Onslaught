@@ -21,6 +21,8 @@ Hitbox::Hitbox(std::weak_ptr<Entity> owner, sf::Vector2f position, sf::Vector2f 
 
 	hitboxOwner = owner;
 	faction = owner.lock()->getFaction();
+	
+	// isVisible = true;
 }
 
 Hitbox::Hitbox(std::weak_ptr<Entity> owner, sf::Vector2f position, float r, int _faction, bool _isVisible)
@@ -35,6 +37,8 @@ Hitbox::Hitbox(std::weak_ptr<Entity> owner, sf::Vector2f position, float r, int 
 	rectHB.setSize({ 0.f, 0.f });
 
 	hitboxOwner = owner.lock();
+
+	// isVisible = true;
 }
 
 void Hitbox::setID(int _id) {

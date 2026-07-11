@@ -75,11 +75,9 @@ void TutorialUI::controlStep() {
                                     L"画面左上の緑バーが残りスタミナだよ。");
             break;
         case 3:
-            // tutorialText.setString("Press Enter or Left Mouse Button to attack.\n"
-                                    // "Press Spacebar while moving to dodge roll.");
-            tutorialText.setString(L"Enterキーか左マウスボタンで攻撃できる。\n"
-                                    L"移動中にスペースキーを押すと回避ロールできる。\n"
-                                    L"どちらもスタミナを消費するよ。");
+            // tutorialText.setString("Press Spacebar or Left Mouse Button to attack.");
+            tutorialText.setString(L"スペースキーか左マウスボタンで攻撃できる。\n"
+                                    L"攻撃もスタミナを消費するよ。");
             break;
         default:
             currentStep = 0;

@@ -158,13 +158,14 @@ void EntityManager::update(float dt, sf::RenderWindow& _window) {
 
 // must be called after updates
 void EntityManager::renderAlive(sf::RenderWindow& _window) {
+	buildManager.render(_window);
+	itemManager.render(_window);
+	objectManager.render(_window);
+	enemyManager.render(_window);
+
 	for (auto& ent : allEntities) {
 		ent->render(_window);
 	}
-	enemyManager.render(_window);
-	itemManager.render(_window);
-	buildManager.render(_window);
-	objectManager.render(_window);
 }
 
 sf::Vector2f EntityManager::getPlayerPos() const {
