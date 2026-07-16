@@ -2,8 +2,8 @@
 * Can be downloaded in the "Releases" section in this repository
 * ReleasesにてOnslaught!の実行ファイルをダウンロードできます。
   
-A video to introduce Onslaught!
-『Onslaught!』の内容紹介動画
+A video to introduce Onslaught!\
+『Onslaught!』の内容紹介動画\
 https://www.youtube.com/watch?v=uRus68wHvRQ
 
 
